@@ -1,4 +1,5 @@
-/* GENERALS */
+/* ##############################
+            GENERALS */
 
 li, p, a {
     font-family: 'Roboto', sans-serif;
@@ -11,17 +12,31 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 
-/* NAVBAR */
+
+
+
+
+/* ##############################
+            NAVBAR */
+
+header {
+    height: 95px;
+}
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 1600px;
+    width: 100%;
     margin: 0 auto;
     min-height: 95px;
+    position: fixed;
+    top: 0;
 }
 
 nav ol {
@@ -41,7 +56,10 @@ nav ol {
 
 
 
-/* MEDIA QUERIES */
+
+
+/* ##############################
+        MEDIA QUERIES */
 
 @media screen and (max-width:768px) {
     
