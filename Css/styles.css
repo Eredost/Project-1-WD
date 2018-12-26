@@ -1,0 +1,62 @@
+/* GENERALS */
+
+li, p, a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    min-height: 95px;
+}
+
+.nav-link {
+    display: inline;
+    margin-right: 30px;
+    color: black;
+    padding-top: 35px;
+}
+
+.nav-link:hover {
+    border-top: 3px solid dodgerblue;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:768px) {
+    
+    /* Navbar*/
+    
+    nav ol {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+    
+    .nav-link {
+        margin-right: 0;
+    }
+    
+    #nav-img {
+        display: none;
+    }
+    
+    /* */
+}
