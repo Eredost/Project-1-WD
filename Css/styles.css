@@ -24,8 +24,12 @@ nav {
     min-height: 95px;
 }
 
+nav ol {
+    display: flex;
+    justify-content: space-around; 
+}
+
 .nav-link {
-    display: inline;
     margin-right: 30px;
     color: black;
     padding-top: 35px;
@@ -45,8 +49,6 @@ nav {
     
     nav ol {
         width: 100%;
-        display: flex;
-        justify-content: space-around;
         padding: 0;
     }
     
