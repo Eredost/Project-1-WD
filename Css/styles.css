@@ -16,7 +16,10 @@ body {
     overflow-x: hidden;
 }
 
-
+#grid-inner {
+    max-width: 1600px;
+    margin: 0 auto;
+}
 
 
 
@@ -58,6 +61,22 @@ nav ol {
 
 
 
+
+/* ##############################
+        WELCOME SECTION */
+
+#welcome {
+    height: 550px;
+    background-image: url(../images/slider/bg1.jpg);
+    background-position-x: 62%;
+}
+
+
+
+
+
+
+
 /* ##############################
         MEDIA QUERIES */
 
@@ -78,5 +97,7 @@ nav ol {
         display: none;
     }
     
-    /* */
+    /* WELCOME SECTION */
+    
+    
 }
