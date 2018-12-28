@@ -21,7 +21,17 @@ body {
     margin: 0 auto;
 }
 
+.blue {
+    color: #138dd8;
+}
 
+.button {
+    padding: 10px 20px;
+    background-color: #138dd8;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0 3px #1768d8;
+}
 
 
 /* ##############################
@@ -40,6 +50,7 @@ nav {
     min-height: 95px;
     position: fixed;
     top: 0;
+    background-color: white;
 }
 
 nav ol {
@@ -68,10 +79,26 @@ nav ol {
 #welcome {
     height: 550px;
     background-image: url(../images/slider/bg1.jpg);
-    background-position-x: 62%;
+    background-position-x: 45%;
+    display: flex;
+    align-items: center;
+    color: white;
 }
 
+#welcome-description {
+    margin-left: 7%;
+    max-width: 680px
+}
 
+#welcome-description h2 {
+    font-size: 2.4em;
+}
+
+#welcome-description a {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1.1em;
+}
 
 
 
@@ -99,5 +126,9 @@ nav ol {
     
     /* WELCOME SECTION */
     
+    #welcome {
+        justify-content: center;
+        text-align: center;
+    }
     
 }
