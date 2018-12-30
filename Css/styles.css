@@ -22,7 +22,7 @@ body {
 }
 
 .blue {
-    color: #138dd8;
+    color: #5CABD1;
 }
 
 .button {
@@ -32,6 +32,41 @@ body {
     border-radius: 3px;
     box-shadow: 0 3px #1768d8;
 }
+
+.circle {
+    display: inline-block;
+    margin: 0 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #5CABD1;
+    border-radius: 50%;
+    vertical-align: center;
+    
+}
+
+hr {
+    display: inline-block;
+    width: 90px;
+    border: none;
+    height: 1px;
+    background-color: gray;
+}
+
+i {
+    font-size: 2em;
+}
+
+.blue-white-circle {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, rgba(92,171,209,1) 0%, rgba(92,171,209,1) 47%, rgba(92,171,209,1) 48%, rgba(113,206,239,1) 48%, rgba(255,255,255,1) 48%, rgba(255,255,255,1) 100%);
+    bottom: 58px;
+    left: 12px;
+}
+
 
 
 /* ##############################
@@ -104,6 +139,62 @@ nav ol {
 
 
 
+
+/* ##############################
+        SERVICES SECTION */
+
+#services header{
+    text-align: center;
+}
+
+#services header h2 {
+    font-size: 2.4em;
+    margin: 55px 0 18px 0;
+}
+
+#services-content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-top: 90px;
+}
+
+#services-img {
+    flex: 1;
+    text-align: center;
+    align-self: center;
+}
+
+#services-text {
+    flex: 1 0 510px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-div {
+    width: 80px;
+    align-self: center;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.icon-div i {
+    padding: 15px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.serv-div {
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+.serv-div h3 {
+    margin: 0;
+}
+
+
+
+
 /* ##############################
         MEDIA QUERIES */
 
@@ -131,4 +222,20 @@ nav ol {
         text-align: center;
     }
     
+    /* SERVICES SECTION */
+    
+    .serv-div {
+        width: 96%;
+        padding: 0 4%;
+        text-align: center;
+    }
+    
+    #services-img img {
+        height: 210px;
+    }
+    
+    #services-text {
+        width: 100%;
+        flex-basis: auto;
+    }
 }
