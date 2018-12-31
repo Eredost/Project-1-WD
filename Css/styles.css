@@ -56,6 +56,10 @@ i {
     font-size: 2em;
 }
 
+.icon-div:nth-child(5) i {
+    font-size: 1.88em;
+}
+
 .blue-white-circle {
     display: inline-block;
     position: relative;
@@ -159,6 +163,7 @@ nav ol {
 }
 
 #services-img {
+    min-width: 50%;
     flex: 1;
     text-align: center;
     align-self: center;
