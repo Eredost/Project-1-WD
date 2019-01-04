@@ -264,6 +264,25 @@ nav ol {
     right: 37%;
 }
 
+/* PROJECTS IMAGES */   
+
+#proj-main {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.proj-img {
+    min-width: 280px;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.proj-img img {
+    width: 100%;
+}
+
 
 
 
