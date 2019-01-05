@@ -284,28 +284,29 @@ nav ol {
     width: 100%;
 }
 
-legend {
+.legend {
     position: relative;
-    text-align: left;
+    display: inline-block;
     bottom: 88px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     visibility: hidden;
 }
 
-legend h3, legend p {
+.legend h3, .legend p {
+    text-align: left;
     padding-left: 10%;
     font-size: 1em;
     color: white;
 }
 
-legend a {
+.legend a {
     position: absolute;
     bottom: 76%;
     left: 85%;
 }
 
-legend i {
+.legend i {
     padding: 12px;
     border-radius: 50%;
     color: white;
@@ -315,7 +316,7 @@ legend i {
     
 }
 
-.proj-img:hover legend{
+.proj-img:hover .legend{
     visibility: visible;
 }
 
