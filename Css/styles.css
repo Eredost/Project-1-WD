@@ -270,20 +270,54 @@ nav ol {
     margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .proj-img {
     min-width: 280px;
     max-width: 450px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: -40px;
 }
 
 .proj-img img {
     width: 100%;
 }
 
+legend {
+    position: relative;
+    text-align: left;
+    bottom: 88px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+}
 
+legend h3, legend p {
+    padding-left: 10%;
+    font-size: 1em;
+    color: white;
+}
+
+legend a {
+    position: absolute;
+    bottom: 76%;
+    left: 85%;
+}
+
+legend i {
+    padding: 12px;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.8em;
+    background-color: #138dd8;
+    border: 2px solid white;
+    
+}
+
+.proj-img:hover legend{
+    visibility: visible;
+}
 
 
 /* ##############################
