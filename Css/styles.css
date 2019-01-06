@@ -31,6 +31,7 @@ body {
     color: white;
     border-radius: 3px;
     box-shadow: 0 3px #1768d8;
+    font-family: "Roboto", sans-serif;
 }
 
 .circle {
@@ -321,6 +322,57 @@ nav ol {
 }
 
 
+
+
+
+/* ##############################
+        CONTACT SECTION */
+
+#contact header {
+    text-align: center;
+}
+
+#contact header h2 {
+    font-size: 2.4em;
+    margin: 55px 0 18px 0;
+}
+
+#contact-bg {
+    margin-top: 95px;
+    height: 650px;
+    background-image: url(../images/map.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#contact-bg form {
+    display: inline-block;
+    max-width: 350px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 90px 0 0 60%;
+    padding-left: 20px;
+}
+
+#email, #name, #subject, textarea{
+    width: 90%;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#email, #name, #subject {
+    height: 30px;
+}
+
+textarea {
+    height: 95px;
+}
+
+#submit {
+    padding: 5px 10px;
+    margin-bottom: 15px;
+}
+
 /* ##############################
         MEDIA QUERIES */
 
@@ -369,5 +421,14 @@ nav ol {
     #services-text {
         width: 100%;
         flex-basis: auto;
+    }
+    
+    /* CONTACT SECTION */
+    
+    #contact-bg form{
+        display: block;
+        margin: 120px auto 0 auto;
+        position: relative;
+        top: 90px;
     }
 }
