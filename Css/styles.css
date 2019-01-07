@@ -118,18 +118,21 @@ nav ol {
         WELCOME SECTION */
 
 #welcome {
+    position: relative;
     height: 550px;
+    max-width: 1920px;
     background-image: url(../images/slider/bg1.jpg);
     background-position-x: 45%;
     background-size: cover;
     display: flex;
     align-items: center;
     color: white;
+    overflow: hidden;
 }
 
 #welcome-description {
     margin-left: 7%;
-    max-width: 680px
+    max-width: 680px;
 }
 
 #welcome-description h2 {
@@ -142,8 +145,31 @@ nav ol {
     font-size: 1.1em;
 }
 
+.welc-icon {
+    position: absolute;
+    border-radius: 50%;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
 
+#left-arrow {
+    position: relative;
+    left: 20px;
+}
 
+.first-arrow {
+    left: -3rem;
+}
+
+#right-arrow {
+    position: relative;
+    right: 20px;
+}
+
+.second-arrow {
+    right: -3rem;
+}
 
 
 
@@ -401,9 +427,13 @@ textarea {
     
     /* WELCOME SECTION */
     
-    #welcome {
-        justify-content: center;
+    #welcome-description {
+        justify-self: center;
         text-align: center;
+    }
+    
+    .welc-icon {
+        display: none;
     }
     
     /* SERVICES SECTION */
