@@ -77,21 +77,21 @@ i {
 /* ##############################
             NAVBAR */
 
-header {
+#navbar-header {
     height: 95px;
 }
 
 nav {
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     margin: 0 auto;
+    width: 100%;
     min-height: 95px;
-    position: fixed;
     top: 0;
-    background-color: white;
     z-index: 1;
+    background-color: white;
 }
 
 nav ol {
@@ -99,13 +99,13 @@ nav ol {
     justify-content: space-around; 
 }
 
-.nav-link {
+.navbar-link {
     margin-right: 30px;
     color: black;
     padding-top: 35px;
 }
 
-.nav-link:hover {
+.navbar-link:hover {
     border-top: 3px solid dodgerblue;
 }
 
@@ -469,10 +469,6 @@ textarea {
     }
     
     /* CONTACT SECTION */
-    
-    #map-div {
-        margin-top: 110px;
-    }
     
     #map-div form {
         margin-left: calc(50% - 175px);
