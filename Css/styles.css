@@ -121,7 +121,6 @@ nav ol {
     height: 550px;
     max-width: 1920px;
     background-image: url(../images/slider/bg1.jpg);
-    background-position-x: 45%;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -260,6 +259,8 @@ nav ol {
     padding-top: 20px;
 }
 
+/* BUTTONS BAR */
+
 #buttons-bar {
     max-width: 350px;
     margin: 35px auto;
@@ -274,17 +275,34 @@ nav ol {
     padding: 15px 0;
     flex: 1;
     position: relative;
+    cursor: pointer;
 }
 
-.proj-link:nth-child(1) {
+.proj-link:first-child {
+    color: white;
+    background-color: #138dd8;
+    border-bottom: 3px solid #1768d8;
+    padding-bottom: 12px;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
 }
 
-.proj-link:nth-last-child(1) {
+.proj-link:first-child::after {
+    content: "";
+    width: 0;
+    position: absolute;
+    border: 10px solid transparent;
+    border-top: 10px solid #1768d8;
+    top: 105%;
+    right: 37%;
+}
+
+.proj-link:last-child {
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
 }
+
+/* BUTTONS HOVER */
 
 .proj-link:hover {
     color: white;
@@ -294,6 +312,25 @@ nav ol {
 }
 
 .proj-link:hover::after {
+    content: "";
+    width: 0;
+    position: absolute;
+    border: 10px solid transparent;
+    border-top: 10px solid #1768d8;
+    top: 105%;
+    right: 37%;
+}
+
+/* BUTTONS FOCUS */
+
+.proj-link:focus {
+    color: white;
+    background-color: #138dd8;
+    border-bottom: 3px solid #1768d8;
+    padding-bottom: 12px;
+}
+
+.proj-link:focus::after {
     content: "";
     width: 0;
     position: absolute;
@@ -358,6 +395,7 @@ nav ol {
 .proj-img:hover .legend{
     visibility: visible;
 }
+
 
 
 
@@ -458,9 +496,18 @@ textarea {
     
     /* WELCOME SECTION */
     
+    #welcome {
+        background-image: none;
+        background-color: #f5f5f5;
+        height: 450px;
+        padding: 0 2%;
+    }
+    
     #welcome-main {
         justify-self: center;
         text-align: center;
+        margin: 0;
+        color: black;
     }
     
     .welcome-icon {
@@ -469,6 +516,10 @@ textarea {
     
     
     /* SERVICES SECTION */
+    
+    #services-main {
+        margin-top: 60px;
+    }
     
     #sv-main-img img {
         height: 210px;
@@ -480,9 +531,17 @@ textarea {
     }
         
     .sv-description {
-        width: 96%;
+        width: 92%;
         padding: 0 4%;
         text-align: center;
+    }
+    
+    .sv-icon {
+        text-align: center;
+    }
+    
+    .blue-white-circle {
+        left: 19.5px;
     }
     
     /* CONTACT SECTION */
